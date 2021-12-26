@@ -1,6 +1,5 @@
 # yac-interpreter
-This is a learning application that is able to interpret a custom made language. It was implemented using python3.9 and python library "sly"
-Language interpreter created using Python sly library
+This is a learning application that is able to interpret a custom made language. It was implemented using python3.9 and python library "sly".
 
 ## Prerequisites
 In order to the program yourself one must:
