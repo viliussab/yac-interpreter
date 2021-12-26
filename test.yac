@@ -1,0 +1,84 @@
+print("---------1----------");
+int a = 3;
+
+func funk (int a) : (int b, int c) { 
+	b = 3; 
+	c = 4; 
+	a = 312312321312;
+}
+
+funk(a);
+print("a = " + str(a));
+
+print("");
+print("---------2----------");
+
+if (2 > 1) { 
+	int b = a * 100; 
+	if (2 > 1) { 
+		int c = b * 100;
+		print("c = " + str(c)); 
+	} 
+	print("b = " + str(b)); 
+}
+
+print("");
+print("---------3----------");
+
+func fib (int n) : (int a) { 
+	a = 0;
+	if ( n <= 1) { 
+		a = n; 
+	} else { 
+		int temp1 = fib(n - 1); 
+		int temp2 = fib(n - 2); 
+		a = temp1 + temp2; 
+	} 
+}
+int ans = fib(7);
+print("fibonaci sekos atsakymas rekursiniu budu: " + str(ans));
+
+print("");
+print("---------4----------");
+
+func fibFor (int n) : (int ab) {
+	int a = 0;
+	ab = 1;
+	int ac;
+	for (int i = 0; i < n - 1; i = i + 1) {	
+		ac = a + ab;
+		a = ab;
+		ab = ac;
+	}
+}
+
+int ansFor = fibFor(7);
+print("fibonaci sekos atsakymas iteraciniu budu: " + str(ansFor));
+
+print("");
+print("---------5----------");
+
+print("a reiksme pries priskiryma");
+print(a);
+print("a reiksme po priskirymo");
+a = a + int(1.5) /* 1 */ + int(6.6) /* 6 */ + int(dbl(2) * 2.5) /* 5 */;
+print(a);
+
+print("");
+print("---------6----------");
+for (int i = 0; i < 8; i = i + 1) { 
+	a = a + i; 
+	print("kintamasis i = " + str(i) + " , kintamasis a = " + str(a)); 
+}
+
+print("");
+print("---------7----------");
+print("a galutine reiksme: " + str(a));
+
+int b, int c = funk(2);
+
+print("");
+print("---------8----------");
+
+print("b = " + str(b));
+print("c = " + str(c));
